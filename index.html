@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+   initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>The Code Path : Code Editor</title>
+  </head>
+  <body>
+    <div class="top-heading">
+      <h1>The Code Path : Code Editor</h1>
+      <div class="nav-container">
+        <!-- <i id="vertical" class="fa-solid fa-grip-vertical"></i> -->
+        <i id="reset" class="fa-solid fa-circle-notch"></i>
+      </div>
+    </div>
+    <div class="code-container">
+      <!-- Html Section------------------------------- -->
+      <div id="html-label" class="html-section">
+        <div class="html-section">
+          <span><i class="fa-brands fa-html5"></i>
+            <label for="html">HTML</label>
+          </span>
+        </div>
+        <textarea id="html" placeholder="write html code ..."
+          spellcheck="false"></textarea>
+      </div>
+      <!-- Css Section -->
+      <div id="css-label" class="css-section">
+        <div class="css-Section">
+          <span><i class="fa-brands fa-css3"></i>
+            <label for="css">CSS</label></span>
+        </div>
+        <textarea id="css" placeholder="write Css code ..."
+          spellcheck="false"></textarea>
+      </div>
+      <!-- JavaScript-Section -->
+      <div id="js-label" class="js-section">
+        <div class="javascript-section">
+          <span><i class="fa-brands fa-js"> </i>
+            <label for="java-script">Java Script</label></span>
+        </div>
+        <textarea id="java-script" placeholder="write Js code ..."
+          spellcheck="false"></textarea>
+      </div>
+    </div>
+    <div class="preview-container">
+      <iframe id="preview" class="preview"></iframe>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

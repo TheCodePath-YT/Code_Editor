@@ -1,0 +1,91 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --bg-light-color:#282833;
+    --bg-dark-color:#0f0f13;
+}
+body{
+   background-color: var(--bg-light-color,#282833);
+   height: 100vh;
+   width: 100%;
+}
+.top-heading{
+    width: 100%;
+    text-align: center;
+    background-color: aliceblue;
+    height: 2.8rem;
+    
+}
+.top-heading h1{
+   font-size: 1.4rem;
+   padding: 10px 0px 10px 0px;
+}
+.code-container{
+display: flex;
+gap: 8px;
+padding: 10px;
+margin-top: 2vh;
+}
+
+.code-container div{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: white;
+    padding: 5px;
+    width: 100%;
+    font-size: 1.6rem;
+    margin:2vh 0vh 2vh 0vh;
+}
+.code-container textarea{
+    width: 100%;
+    height: 50vh;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: var( --bg-dark-color,black);
+    outline: none;
+    border: none;
+    box-shadow:inset 0px 1px 2px 3px grey;
+    color: white;
+    margin-top: 1vh;
+}
+.preview{
+    display: block;
+    background-color: whitesmoke;
+    flex-direction: column;
+    width: 97%;
+    margin: auto;
+    min-height: 50vh;
+    max-height: fit-content;
+    padding: 10px;
+    margin-bottom: 2vh;
+    box-shadow:inset 0px 1px 2px 3px grey;
+    
+}
+.top-heading i {
+    color: black !important;
+    align-items: end;
+    font-size: 2rem;
+    text-align: end;
+    width: 100%;
+    padding: 10px;
+    background-color: aliceblue;
+}
+div span{
+    margin-top: 2vh;
+    display: flex;
+   gap: 10px;
+}
+div span:where(.javascript-section,.html-section,.css-section){
+    display: flex;
+    flex-wrap: nowrap;
+  
+}
+.nav-container{
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+}
